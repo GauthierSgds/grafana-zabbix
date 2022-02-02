@@ -696,9 +696,9 @@ export class ZabbixAPIConnector {
 
 function filterTriggersByAcknowledge(triggers, acknowledged) {
   if (acknowledged === 0) {
-    return _.filter(triggers, (trigger) => trigger.lastEvent.acknowledged === "0");
+    return _.filter(triggers, (trigger) => trigger.lastEvent.acknowledged === 0);
   } else if (acknowledged === 1) {
-    return _.filter(triggers, (trigger) => trigger.lastEvent.acknowledged === "1");
+    return _.filter(triggers, (trigger) => trigger.lastEvent.acknowledged === 1);
   } else {
     return triggers;
   }
