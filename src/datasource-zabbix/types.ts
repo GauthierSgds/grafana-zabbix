@@ -241,6 +241,7 @@ export interface ZBXProblem {
 }
 
 export interface ZBXTrigger {
+  acknowledged?: '1' | '0';
   acknowledges?: ZBXAcknowledge[];
   showAckButton?: boolean;
   alerts?: ZBXAlert[];
